@@ -79,7 +79,7 @@ mixin MessageViewMixin<T extends StatefulWidget> on State {
   void messageListener(MessageStateMixin state) {
     effect(() {
       switch(state) {
-        case MessageStateMixin(: final errorMessage?):
+        case MessageStateMixin(: final errorMessage?): // Esse ? é colocado para reconhecer quando errorMessage não é null
           Messages.showError(errorMessage, context);
         case MessageStateMixin(: final infoMessage?):
           Messages.showInfo(infoMessage, context);
