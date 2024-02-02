@@ -2,6 +2,7 @@ import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:lab_clinicas_core/src/loader/lab_clinicas_loader.dart';
+import 'package:lab_clinicas_core/src/theme/lab_clinicas_theme.dart';
 
 class LabClinicasCoreConfig extends StatelessWidget {
 
@@ -41,6 +42,8 @@ class LabClinicasCoreConfig extends StatelessWidget {
               ],
               routes: routes,
               title: title,
+              theme: LabClinicasTheme.lightTheme,
+              darkTheme: LabClinicasTheme.darkTheme,
             );
           }
         );
