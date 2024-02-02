@@ -74,7 +74,7 @@ mixin MessageStateMixin {
 }
 
 // Mixin responsável por mostrar as mensagens
-mixin MessageViewMixin<T extends StatefulWidget> on State {
+mixin MessageViewMixin<T extends StatefulWidget> on State<T> {
 
   void messageListener(MessageStateMixin state) {
     effect(() {
